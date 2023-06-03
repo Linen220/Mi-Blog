@@ -1,0 +1,35 @@
+.blogs-main {
+    width: 100%;
+    .principal-section {
+        width: 100%;
+        padding: 3rem 7rem;
+        background-color: #e6e9ed;
+        @include flexBox(row, center, center, 2rem);
+        .notice {
+            width: 50%;
+            &__title {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+            }
+            figure {
+                width: 100%;
+                height: 100%;
+            }
+            &__img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .impact {
+            width: 50%;
+            @include flexBox(column, center, flex-start, 2rem);
+            &__btn {
+                text-align: center;
+                border: 1px solid #9376E0;
+                width: 100px;
+                padding: .5rem;
+            }
+        }
+    }
+}

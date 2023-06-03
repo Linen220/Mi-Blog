@@ -1,0 +1,36 @@
+.home-container {
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    // background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+    background: url('../../assets/img/background.jpg') center/cover no-repeat;
+
+    @include flexBox(column, center, center, 5rem);
+    &__text {
+        width: 80%;
+        letter-spacing: 1rem;
+        line-height: 3.25rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: white;
+    }
+    &__btn {
+        border: none;
+        outline: none;
+        border: 1px solid #3F0071;
+        cursor: pointer;
+        border-radius: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 150px;
+        padding: 1rem 1rem;
+        color: white;
+        background-color: #3F0071;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #eee;
+            transition: all 1s;
+        }
+    }
+}
