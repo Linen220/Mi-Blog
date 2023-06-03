@@ -1,0 +1,80 @@
+header {
+    width: 100%;
+    height: 140px;
+    @include grid(0, 2, 0px);
+    .header-icons-container {
+        width: 100%;
+        height: 50px;
+        background-color: #000000;
+        opacity: .8;
+        @include grid(0,0,0); 
+        .icons {
+            min-width: 300px;
+            height: auto; // Toma la altura de su padre
+            margin-right: 3rem;
+            @include flexBox(row,flex-end,center,1rem);
+            span {
+                color: white;
+                &:hover {
+                    color: #9376E0;
+                }
+            }
+        }
+    }
+    .header-nav-container {
+        width: 100%;
+        height: 90px;
+        padding: 0 3rem;
+        background-color: #FF0060;
+        opacity: .8;
+        @include flexBox(row, space-between, center, 0);
+
+        &__logo img{
+            display: block;
+            width: 250px;
+        }
+        &__perfil {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.home-container {
+    text-align: center;
+    padding-bottom: 6rem;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/img/background.jpg');
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+    @include flexBox(column, center, center, 0);
+    &__text {
+        width: 900px;
+        letter-spacing: 1rem;
+        line-height: 3.25rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: white;
+        padding-bottom: 5rem;
+    }
+    &__btn {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 1.5rem;
+        font-size: 1.25rem;
+        width: 150px;
+        padding: 1rem 1rem;
+        color: white;
+        background-color: #3F0071;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #eee;
+            transition: all 1s;
+        }
+    }
+}

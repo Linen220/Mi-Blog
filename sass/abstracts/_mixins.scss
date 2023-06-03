@@ -1,0 +1,16 @@
+// Mixin para usar grid
+@mixin grid ($columns, $rows, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    gap: $gap;
+}
+
+// Mixin para usar flexbox
+@mixin flexBox ($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}

@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
+}
+header .header-icons-container {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
+  grid-template-rows: repeat(0, 1fr);
+  gap: 0;
+}
+header .header-icons-container .icons {
+  min-width: 300px;
+  height: auto;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+header .header-icons-container .icons span {
+  color: white;
+}
+header .header-icons-container .icons span:hover {
+  color: #9376E0;
+}
+header .header-nav-container {
+  width: 100%;
+  height: 90px;
+  padding: 0 3rem;
+  background-color: #FF0060;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+header .header-nav-container__logo img {
+  display: block;
+  width: 250px;
+}
+header .header-nav-container__perfil {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.home-container {
+  text-align: center;
+  padding-bottom: 6rem;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.home-container__text {
+  width: 900px;
+  letter-spacing: 1rem;
+  line-height: 3.25rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+  padding-bottom: 5rem;
+}
+.home-container__btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  width: 150px;
+  padding: 1rem 1rem;
+  color: white;
+  background-color: #3F0071;
+}
+.home-container__btn:hover {
+  background-color: transparent;
+  border: 1px solid #eee;
+  transition: all 1s;
+}
+
+/*# sourceMappingURL=main.css.map */
