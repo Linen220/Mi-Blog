@@ -293,4 +293,58 @@ footer .footer-text p {
   padding-top: 1rem;
 }
 
+.perfil-section {
+  width: 100%;
+  background-color: #e6e9ed;
+}
+.perfil-section__container {
+  width: 80%;
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.perfil-section__img {
+  width: 100%;
+}
+.perfil-section__img img {
+  display: block;
+  width: 90%;
+}
+.perfil-section .perfil__title {
+  padding-bottom: 1rem;
+}
+
+.project-section {
+  width: 100%;
+}
+.project-section__container {
+  width: 80%;
+  padding: 4rem;
+  margin: 0 auto;
+}
+.project-section__title {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid gray;
+}
+.project-section__cards {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.project-section__cards .project-card {
+  max-width: 400px;
+}
+.project-section__cards .project-card__title {
+  padding-bottom: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */

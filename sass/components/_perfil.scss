@@ -1,0 +1,46 @@
+.perfil-section {
+    width: 100%;
+    background-color: #e6e9ed;
+    &__container {
+        width: 80%;
+        padding: 4rem 0;
+        margin: 0 auto;
+        @include flexBox(row,center,center,0);
+    }
+    &__img {
+        width: 100%;    
+        img {
+            display: block;
+            width: 90%;
+        }
+    }
+    .perfil__title {
+        padding-bottom: 1rem;
+    }
+}
+
+.project-section {
+    width: 100%;
+    &__container {
+        width: 80%;
+        padding: 4rem;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid gray;
+    }
+    &__cards {
+        padding-top: 2rem;
+        @include flexBox(row, space-between, flex-start, 1rem);
+        flex-wrap: wrap;
+        .project-card {
+            max-width: 400px;
+            &__title {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+}
