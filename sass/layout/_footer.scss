@@ -12,6 +12,9 @@ footer {
         @include flexBox(row, center, center, 0);
         p {
             color: white;
+            @include mobile {
+            text-align: center;
+            }
         }
     }
 }

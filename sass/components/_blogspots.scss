@@ -19,12 +19,16 @@
         // @include grid(3,2,2rem);
         @include flexBox(row, center, center, 2rem);
         flex-wrap: wrap;
+        @include mobile {
+            padding: 2rem 0;
+        }
         .blogpost-card {
             max-width: 300px;
             border: 1px solid #9376E0;
             box-shadow: 5px 5px 10px gray;
             padding: 1rem;
             width: 100%;
+            
             @include flexBox(column, center, flex-start, 2rem);
             &__img {
                 display: block;
